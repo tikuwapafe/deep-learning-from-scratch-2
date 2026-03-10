@@ -1,6 +1,6 @@
 # coding: utf-8
-import sys
-sys.path.append('..')
+import sys, os
+sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 from common.util import preprocess, create_co_matrix, most_similar
 
 

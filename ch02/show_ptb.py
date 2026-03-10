@@ -1,10 +1,11 @@
 # coding: utf-8
-import sys
-sys.path.append('..')
+import sys, os
+sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 from dataset import ptb
 
 
 corpus, word_to_id, id_to_word = ptb.load_data('train')
+# 引数は train:訓練用 test:テスト用 valid:検証用 のいずれか
 
 print('corpus size:', len(corpus))
 print('corpus[:30]:', corpus[:30])
