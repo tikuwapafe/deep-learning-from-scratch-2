@@ -1,6 +1,6 @@
 # coding: utf-8
-import sys
-sys.path.append('..')  # 親ディレクトリのファイルをインポートするための設定
+import sys, os
+sys.path.append(os.path.join(os.path.dirname(__file__), '..')) # 親ディレクトリのファイルをインポートするための設定
 from common.optimizer import SGD
 from common.trainer import Trainer
 from dataset import spiral
