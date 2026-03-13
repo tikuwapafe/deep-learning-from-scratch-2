@@ -1,6 +1,6 @@
 # coding: utf-8
-import sys
-sys.path.append('..')
+import sys,os
+sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 import matplotlib.pyplot as plt
 import numpy as np
 from common.optimizer import SGD
